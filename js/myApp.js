@@ -8,10 +8,9 @@ todoList.addEventListener('click', removeItem);
 function addToList(e){
     e.preventDefault();
 
-    var heading = document.getElementById('heading').value;
-    var description = document.getElementById('description').value;
+    var heading = document.querySelector('.input#heading').value;
+    var description = document.querySelector('.textarea#description').value;
 
-    heading.value = "";
 
     var todoBox = document.createElement('div');
     var viewHeading = document.createElement('h1');
