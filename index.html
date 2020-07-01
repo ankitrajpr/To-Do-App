@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>To Do APP</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="hero is-dark is-small is-bold is-mobile has-text-centered">
+            <!-- this is the header -->
+            <h2 class="title" style="padding: 20px;">To-Do App</h2>
+        </header>
+        <div class="box">
+            <form action="" id="todoForm">
+                <div class="field">
+                    <label for="" class="label">Heading</label>
+                    <div class="control">
+                        <!-- todo header -->
+                        <input type="text" placeholder="Heading" id="heading" class="input" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="" class="label">Description</label>
+                    <div class="control">
+                        <!-- todo body -->
+                        <textarea type="text" placeholder="Description" id="description" class="textarea" required></textarea>
+                    </div>
+                </div>
+                <!-- submit button -->
+                <input type="submit" value="Add to List" class="button is-dark">
+            </form>
+        </div>
+        
+        <div id="todoList" class="box">
+            </div>      
+        </div>
+
+
+    </div>
+
+    <script src="js/myApp.js"></script>
+</body>
+</html>
